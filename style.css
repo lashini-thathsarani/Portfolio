@@ -9,12 +9,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-section{
-    min-height: 100vh;
-    padding: 30px 8%;
-    bo-sizing: border-box;
-    scroll-margin-top: 220px;
-}
+
 /* Body */
 
 body{
