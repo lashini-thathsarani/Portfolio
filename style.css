@@ -27,11 +27,14 @@ body{
 
 header{
     background-color: #0f172a;
-    padding: 100px 8%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 5%;
 
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-radius: 0 0 15px 15px;
 }
 
 /* Navigation */
