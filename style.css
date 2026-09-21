@@ -29,7 +29,7 @@ header{
     background-color: #0f172a;
     width: 90%;
     margin: 0 auto;
-    padding: 30px 5%;
+    padding: 30px 8%;
 
     position: sticky;
     top: 0;
@@ -80,7 +80,7 @@ nav ul li a :hover{
     /*Home Screen*/
 #home{
     min-height: 100vh;
-    padding: 100px 8%;
+    padding: 30px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,7 +144,7 @@ nav ul li a :hover{
 } 
     /*about section*/
 #about{
-    padding: 100px 8%;
+    padding: 30px 8%;
     min-height:100vh;
 }
 
@@ -190,7 +190,7 @@ nav ul li a :hover{
 /*Skills Section*/
 
 #skills{
-    padding: 100px 8%;
+    padding: 30px 8%;
     min-height: 100vh;
 }
 
@@ -242,7 +242,7 @@ nav ul li a :hover{
 /* Project Section*/
 
 #projects{
-    padding:100px 8%;
+    padding:30px 8%;
     min-height: 100vh;
 }
 
@@ -322,7 +322,7 @@ nav ul li a :hover{
 /* Education Section */
 
 #education{
-    padding:100px 8%;
+    padding:30px 8%;
     min-height: 100vh
 }
 
@@ -363,7 +363,7 @@ nav ul li a :hover{
 /* contact section */
 
 #contact{
-    padding: 100px 8%;
+    padding: 30px 8%;
     min-height: 100vh;
 }
 
