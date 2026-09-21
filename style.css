@@ -11,7 +11,6 @@ box-sizing: border-box;
 
 section {
     min-height: 100vh;
-    padding: 100px 8% 40px;
     box-sizing: border-box;
     scroll-margin-top: 80px;
 }
@@ -28,7 +27,7 @@ body{
 
 header{
     background-color: #0f172a;
-    padding: 20px 8%;
+    padding: 100px 8%;
 
     position: sticky;
     top: 0;
@@ -78,7 +77,7 @@ nav ul li a :hover{
     /*Home Screen*/
 #home{
     min-height: 100vh;
-    padding: 80px 8%;
+    padding: 100px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,7 +141,7 @@ nav ul li a :hover{
 } 
     /*about section*/
 #about{
-    padding: 80px 8%;
+    padding: 100px 8%;
     min-height:100vh;
 }
 
@@ -188,7 +187,7 @@ nav ul li a :hover{
 /*Skills Section*/
 
 #skills{
-    padding: 80px 8%;
+    padding: 100px 8%;
     min-height: 100vh;
 }
 
@@ -240,7 +239,7 @@ nav ul li a :hover{
 /* Project Section*/
 
 #projects{
-    padding:80px 8%;
+    padding:100px 8%;
     min-height: 100vh;
 }
 
@@ -320,7 +319,7 @@ nav ul li a :hover{
 /* Education Section */
 
 #education{
-    padding:80px 8%;
+    padding:100px 8%;
     min-height: 100vh
 }
 
@@ -361,7 +360,7 @@ nav ul li a :hover{
 /* contact section */
 
 #contact{
-    padding: 80px 8%;
+    padding: 100px 8%;
     min-height: 100vh;
 }
 
