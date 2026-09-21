@@ -9,11 +9,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-section {
-    min-height: 100vh;
-    box-sizing: border-box;
-    scroll-margin-top: 80px;
-}
 
 /* Body */
 
