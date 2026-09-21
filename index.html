@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width , initial-scale = 1.0 ">
+    <title> Lashini | Software Engineering Undergraduate </title>
+    <link rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+    <!--Navigation-->
+    <header>
+        <nav>
+            <a href = "#home"> Welcome to my web site! </a>
+
+            <ul>
+                <li><a href = "#home"> Home </a></li>
+                <li><a href = "#about"> About </a></li>
+                <li><a href = "#skills"> Skills </a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact" >Contact </a></li>
+             </ul>   
+    
+            </nav>
+    </header>
+    <main>
+        <!--Home-->
+        <section id = "home">
+            <div>
+                <p> Hello, I'm </p>
+                <h1> Lashini Thathsarani </h1>
+                <h2> Software Engineering Undergraduate</h2>
+                <p>I’m passionate about turning ideas into
+                     complete digital solutions, 
+                     combining frontend creativity with backend
+                      logic to build applications that are both 
+                      useful and engaging.</p>
+                <a href = "#projects"> View Projects </a>
+                <a href = "#contact"> Contact me </a>      
+            </div> 
+
+            <div>
+                <img 
+                src = "images/myphoto.png" alt = "Lashini Profile Photo">
+            </div>      
+        </section> 
+        
+        <!--About-->
+        <section id = "about">
+            <div>
+                <p>Get To Know Me</p>
+                <h2>About Me</h2>
+            </div>   
+            <div>
+                <div>
+                    <img src = "images/myphoto.png" alt = "Lashini">
+                </div> 
+                <div>
+                    <p>
+                       I am a Software Engineering undergraduate
+                        at the University of Colombo School of
+                        Computing with an interest in full-stack
+                        development. 
+                    </p>  
+                    <p>
+                       I am currently developing my knowledge in
+                        Java, MySQL, HTML, CSS and JavaScript while
+                        working on practical projects 
+                    </p>  
+                    <p>
+                        I am looking for an internship opportunity
+                        where I can improve my technical skills,
+                        gain industry experience and contribute
+                        to real-world projects.
+                    </p>      
+                </div>     
+            </div>    
+
+        </section>  
+        
+        <!--Skills-->
+        <section id = "skills">
+            <div> 
+                <p> what I Know </p>
+                <h2> My Skills </h2>
+            </div>   
+            <div>
+                <div>
+                    <h3> Java </h3>
+                    <p> Programming & OOP </p>
+                </div>
+                <div>
+                    <h3> HTML </h3>
+                    <p> Web Structure </p>
+                </div>   
+                <div>
+                    <h3> CSS </h3>
+                    <p> Web Styling </p>
+                </div>   
+                <div>
+                    <h3> JavaScript </h3>
+                    <p> Web Interactivity </p>
+                </div> 
+                <div>
+                    <h3> MySQL </h3>
+                    <p> Database & SQL </p>
+                </div>
+                <div>
+                    <h3> Git </h3>
+                    <p> Version Control </p>
+                </div>        
+            </div>    
+        </section>
+        
+        <!--Project-->
+        <section id = "projects">
+            <div>
+                <p> My Recent Work </p>
+                <h2> Projects </h2>
+            </div>
+            <article>
+                <div>
+                    <img src = "images/pharmacy.png"
+                     alt = "Pharmacy Management System">
+                </div> 
+                <div>
+                    <p> In Progress </p>
+                    <h3> Pharmacy Management System </h3>
+                    <p>
+                        A pharmacy management system designed
+                        to manage products, stock, customers,
+                        sales and payments.
+                    </p>
+                    <p>
+                        Java . MySQL
+                    </p>
+                    <a href = "#"> View Project </a>   
+                </div>     
+            </article>   
+
+        </section>
+        <!--Education-->  
+        
+        <section id = "education">
+
+            <div> 
+                <p>My Academic Journey</p>
+                <h2> Education </h2>
+            </div>  
+            <div> 
+                <h3>
+                    University Of Colombo School Of Computing
+                </h3>  
+                <p>
+                    Software Engineering Undergraduate    
+                </p>    
+            </div>
+
+            </section>
+
+
+        <!--Contact-->
+        <section id = "contact">
+            <div>
+                <p> Let's Connect </p>
+                <h2> Connect Me </h2>
+            </div>  
+            <div>
+                <div>
+                    <h3> Get In Touch </h3>
+
+                    <p>
+                        I am open to internship opportunities
+                        and software development projects.
+                    </p>
+
+                    <p>
+                        Email : lashinithathsarani468@gmail.com
+                    </p>  
+                    
+                    <p>
+                        Phone : 071-4009591
+                    </p>
+                    <p>
+                        <a href = "#"> GitHub </a>
+                    </p> 
+                    <p>
+                        <a href = "#" > LinkedIn </a>
+                    </p>      
+                </div>
+                <p id="form-message"></p>
+                <form id="contact-form">
+                    <input type = "text" name ="name"
+                            id = "user-name"
+                            placeholder="Lashini" required>
+                    <input type = "email" name = "email"
+                            id = "user-email"
+                            placeholder="lashinithathsarani468@gmail.com" required>
+                    <textarea
+                            id = "user-message"
+                            placeholder="your Message" name = "message" required></textarea>  
+                    <button type = "submit"> send Message </button>             
+                </form>
+            </div>    
+
+        </section>    
+    </main>  
+    
+    <!--Footer-->
+    <footer>
+        <p>
+            2026 Lashini Portfolio.All Rights Reserved.
+        </p>
+     </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>  
+   <script src="script.js"></script>
+</body>
+</html>
