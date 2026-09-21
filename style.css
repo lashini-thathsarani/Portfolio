@@ -541,14 +541,11 @@ footer p{
 
 @media(min-width:769px){
 
-    /* Space kept under the sticky menu bar when a menu link is clicked.
-       Change this number to match your menu bar height. */
-    html{
-        scroll-padding-top: 100px;
-    }
-
-    /* Extra space between the menu bar and each section heading */
+    /* Space above each section heading so it is not hidden behind the
+       sticky menu bar. Menu bar is about 100px tall, so:
+       gap under the menu = padding-top - menu bar height.
+       Make the number bigger for more space, smaller for less. */
     #about, #skills, #projects, #education, #contact{
-        padding-top: 60px;
+        padding-top: 150px;
     }
-} 
+}
