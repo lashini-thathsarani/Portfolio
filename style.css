@@ -527,6 +527,11 @@ footer p{
         width:100%; 
     } 
  
+    /* Less empty space at the bottom of each section (mobile only) */
+    #about, #skills, #projects, #education, #contact{
+        min-height: auto;
+    }
+
     /* Contact Section */ 
  
     #contact > div:nth-child(2){ 
@@ -549,3 +554,4 @@ footer p{
         padding-top: 150px;
     }
 }
+
