@@ -462,7 +462,7 @@ footer p{
     /* Navigattion */
 
     header nav{
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
     }
 
