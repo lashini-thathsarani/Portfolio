@@ -236,16 +236,18 @@ nav ul li a :hover{
     transform: translateY(-8px);
 }
 
-/* Project Section*/
+/* Project Section */
 
 #projects {
-    padding: 0 8%;
+    padding: 30px 8%;
     min-height: 100vh;
 }
 
+/* Projects Heading */
+
 #projects > div:first-child {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 /* project card */
 
