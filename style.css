@@ -455,10 +455,18 @@ footer p{
 } 
  
 @media(max-width:768px){ 
- 
+
+    /* NEW: space under the sticky header when a menu link is clicked */
+    html{
+        scroll-padding-top: 140px;
+    }
+
+    /* NEW: more space above every section heading on mobile */
+    #home, #about, #skills, #projects, #education, #contact{
+        padding-top: 50px;
+    }
+
     /* Navigattion */ 
- 
-     
      
     header{ 
         width: 100%; 
@@ -466,7 +474,6 @@ footer p{
         padding: 15px; 
         border-radius: 0; 
     } 
- 
  
     header h1 { 
         font-size: 32px; 
@@ -533,4 +540,4 @@ footer p{
         flex-direction: column; 
         gap: 30px; 
     } 
-}  hari giye na ne thama e space eka thiyenawa
+}  
