@@ -453,6 +453,12 @@ footer p{
     font-size: 14px; 
     margin: 0; 
 } 
+/* WEB VIEW ONLY: section headings stay visible below the sticky menu */
+@media (min-width: 769px){
+    #about, #skills, #projects, #education, #contact{
+        padding-top: 150px !important;
+    }
+}
  
 @media(max-width:768px){ 
  
