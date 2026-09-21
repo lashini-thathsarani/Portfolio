@@ -142,7 +142,7 @@ nav ul li a :hover{
     /*about section*/
 #about{
     padding: 80px 8%;
-    min-height:80vh;
+    min-height:100vh;
 }
 
     /*About Heading*/
