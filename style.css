@@ -70,7 +70,7 @@ nav ul li a :hover{
 }
     /*Home Screen*/
 #home{
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 80px 8%;
     display: flex;
     align-items: center;
@@ -182,7 +182,7 @@ nav ul li a :hover{
 
 #skills{
     padding: 80px 8%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 /*Skills Heading*/
@@ -234,7 +234,7 @@ nav ul li a :hover{
 
 #projects{
     padding:80px 8%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 /* Projects Heading*/
@@ -314,7 +314,7 @@ nav ul li a :hover{
 
 #education{
     padding:80px 8%;
-    min-height: 60vh
+    min-height: 100vh
 }
 
 /* Education Heading */
@@ -355,7 +355,7 @@ nav ul li a :hover{
 
 #contact{
     padding: 80px 8%;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 /* Contact Heading */
@@ -399,7 +399,7 @@ nav ul li a :hover{
 /* Textarea */
 
 #contact textarea {
-    min-height: 150px;
+    min-height: 100px;
     resize: vertical;
 }
 
