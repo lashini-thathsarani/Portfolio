@@ -544,14 +544,11 @@ footer p{
    NEW: Web (desktop) view spacing only - does NOT affect mobile
    ============================================================ */
 
-@media(min-width:769px){
-
-    /* Space above each section heading so it is not hidden behind the
-       sticky menu bar. Menu bar is about 100px tall, so:
-       gap under the menu = padding-top - menu bar height.
-       Make the number bigger for more space, smaller for less. */
+/* Remove the big empty space after each section (mobile only) */
+@media (max-width: 768px){
     #about, #skills, #projects, #education, #contact{
-        padding-top: 150px;
+        min-height: 0 !important;
     }
+}
 }
 
