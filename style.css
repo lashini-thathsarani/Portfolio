@@ -32,15 +32,7 @@ header{
     border-radius: 0 0 15px 15px;
 }
 
-#projects {
-    padding: 0 8%;
-    min-height: 100vh;
-}
 
-#projects > div:first-child {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* Navigation */
 
@@ -246,18 +238,15 @@ nav ul li a :hover{
 
 /* Project Section*/
 
-#projects{
-    padding:30px 8%;
+#projects {
+    padding: 0 8%;
     min-height: 100vh;
 }
 
-/* Projects Heading*/
-
-#projects > div:first-child{
-    text-align:center;
-    margin-bottom: 50px;
+#projects > div:first-child {
+    text-align: center;
+    margin-bottom: 20px;
 }
-
 /* project card */
 
 #projects article{
