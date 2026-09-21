@@ -462,7 +462,11 @@ footer p{
     /* Navigattion */
 
     header{
-        padding: 20px 15px;
+        width:90%;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+        box-sizing: border-box;
         flex-direction: row;
         align-items: center;
 
