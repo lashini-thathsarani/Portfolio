@@ -62,7 +62,7 @@ nav ul li a {
     color: white; 
     text-decoration: none; 
     font-size: 16px; 
-    transition: color 0.3s ease,                                                                                                                  
+    transition: color 0.3s ease, 
     transform 0.3s ease; 
     display: inline-block; 
 } 
@@ -455,18 +455,10 @@ footer p{
 } 
  
 @media(max-width:768px){ 
-
-    /* NEW: space under the sticky header when a menu link is clicked */
-    html{
-        scroll-padding-top: 140px;
-    }
-
-    /* NEW: more space above every section heading on mobile */
-    #home, #about, #skills, #projects, #education, #contact{
-        padding-top: 50px;
-    }
-
+ 
     /* Navigattion */ 
+ 
+     
      
     header{ 
         width: 100%; 
@@ -474,6 +466,7 @@ footer p{
         padding: 15px; 
         border-radius: 0; 
     } 
+ 
  
     header h1 { 
         font-size: 32px; 
@@ -540,4 +533,22 @@ footer p{
         flex-direction: column; 
         gap: 30px; 
     } 
-}  
+} 
+
+/* ============================================================
+   NEW: Web (desktop) view spacing only - does NOT affect mobile
+   ============================================================ */
+
+@media(min-width:769px){
+
+    /* Space kept under the sticky menu bar when a menu link is clicked.
+       Change this number to match your menu bar height. */
+    html{
+        scroll-padding-top: 100px;
+    }
+
+    /* Extra space between the menu bar and each section heading */
+    #about, #skills, #projects, #education, #contact{
+        padding-top: 60px;
+    }
+} 
