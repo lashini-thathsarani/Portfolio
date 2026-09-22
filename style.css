@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     margin: 0;
+    scroll-padding-top: 120px;
 }
 
 * {
