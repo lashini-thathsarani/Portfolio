@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     margin: 0;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 90px;
 }
 
 * {
@@ -304,7 +304,6 @@ nav ul li a:hover {
     padding: 0 8%;
     min-height: 100vh;
     position: relative;
-    top: -80px;
 }
 /* Projects Heading */
 
