@@ -1,555 +1,688 @@
-html{ 
-    scroll-behavior: smooth;  margin: 0; 
-} 
- 
-*{ 
-margin: 0; 
-padding: 0; 
-box-sizing: border-box; 
-} 
- 
- 
-/* Body */ 
- 
-body{ 
-    font-family: Arial, Helvetica, sans-serif; 
-    background-color: #0f172a; 
-    color:white; 
-} 
- 
-/* Header */ 
- 
-header{ 
-    background-color: #0f172a; 
-    width: 90%; 
-    margin: 0 auto; 
-    padding: 30px 8%; 
- 
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
-    border-radius: 0 0 15px 15px; 
-} 
- 
-/* Navigation */ 
- 
-nav{ 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-} 
- 
-/* Logo */ 
- 
-nav > a { 
-    font-size: 28px; 
-    font-weight: bold; 
-    color: #38bdf8; 
-    text-decoration: none; 
-} 
- 
-/* Navigation List */ 
- 
-nav ul { 
-    display: flex; 
-    list-style: none; 
-    gap: 30px; 
-} 
- 
-/* Navigation Links*/ 
- 
-nav ul li a { 
-    color: white; 
-    text-decoration: none; 
-    font-size: 16px; 
-    transition: color 0.3s ease, 
-    transform 0.3s ease; 
-    display: inline-block; 
-} 
- 
-nav ul li a :hover{ 
-    color: #38bdf8; 
-    transform: translateY(-2px); 
-} 
-    /*Home Screen*/ 
-#home{ 
-    min-height: 100vh; 
-    padding: 30px 8%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 50px; 
-} 
- 
-    /*Text Container*/ 
- 
-#home > div:first-child{ 
-    flex: 1; 
-} 
- 
-    /*Main Heading*/ 
- 
-#home h1{ 
-    font-size: 48px; 
-    margin: 15px 0; 
-    color: #38bdf8; 
-} 
- 
- 
-    /*Subtitle*/ 
-#home h2{ 
-    font-size: 24px; 
-    margin-bottom: 20px; 
-} 
- 
-    /*Paragraph*/ 
-#home p { 
-    line-height: 1.6; 
-} 
- 
-    /*Image Container*/ 
-#home > div:last-child{ 
-    flex:1; 
-    display: flex; 
-    justify-content: center; 
-} 
-    /*Profile Image*/ 
- 
-#home img{ 
-    width:350px; 
-    height:350px; 
-    object-fit: cover; 
-    border-radius: 50%;} 
- 
- 
-    /*Buttons*/ 
-#home a { 
-    display: inline-block; 
-    padding: 12px 25px; 
-    margin-top: 25px; 
-    margin-right: 10px; 
- 
-    background-color: #38bdf8; 
-    color: #0f172a; 
- 
-    text-decoration: none; 
-    border-radius: 6px; 
-    font-weight: bold; 
-}  
-    /*about section*/ 
-#about{ 
-    padding: 30px 8%; 
-    min-height:100vh; 
-} 
- 
-    /*About Heading*/ 
- 
-#about > div:first-child p { 
-    text-align: center; 
-    margin-bottom: 20px; 
-} 
- 
-#about > div:first-child h2{ 
-    text-align:center; 
-    margin-bottom: 40px; 
- 
-} 
- 
-    /*About content*/  
-     
-#about > div:nth-child(2){ 
-    display:flex; 
-    align-items:center; 
-    gap:60px; 
-}     
- 
-#about img { 
-    width:300px; 
-    height:300px; 
-    object-fit: cover; 
-    border-radius:20px; 
-} 
- 
-/*about text*/ 
- 
-#about > div:nth-child(2) > div:last-child{ 
-    flex: 1; 
-} 
- 
-#about > div:nth-child(2) p { 
-    line-height:1.8; 
-    margin-bottom: 20px; 
-} 
- 
-/*Skills Section*/ 
- 
-#skills{ 
-    padding: 30px 8%; 
-    min-height: 100vh; 
-} 
- 
-/*Skills Heading*/ 
- 
-#skills > div:first-child { 
-    text-align: center; 
-    margin-bottom: 50px; 
-} 
- 
-/*skills grid*/ 
- 
-#skills > div:nth-child(2){ 
-    display:grid; 
-    grid-template-columns: repeat(3,1fr); 
-    gap: 25px; 
-} 
- 
-#skills > div:nth-child(2) > div{ 
-    background-color: #1e293b; 
-    padding: 30px; 
-    border-radius: 12px; 
- 
-    text-align: center; 
- 
-    transition: transform 0.3s ease; 
-} 
- 
-/* skill Title */ 
- 
-#skills h3{ 
-    color: #38bdf8; 
-    font-size: 22px; 
-    margin-bottom: 10px; 
-} 
- 
-/* skill Description */ 
- 
-#skills p{ 
-    color: #cbd5e1; 
-} 
- 
-/* Hover Effect */ 
- 
-#skills > div:nth-child(2) > div:hover{ 
-    transform: translateY(-8px); 
-} 
- 
-/* Project Section*/ 
- 
-#projects{ 
-    padding:30px 8%; 
-    min-height: 100vh; 
-} 
- 
-/* Projects Heading*/ 
- 
-#projects > div:first-child{ 
-    text-align:center; 
-    margin-bottom: 50px; 
-} 
- 
-/* project card */ 
- 
-#projects article{ 
-    display: flex; 
-    align-items: center; 
-    gap: 50px; 
- 
-    background-color:#1e293b; 
-    padding: 100px; 
-    border-radius: 15px; 
-} 
- 
-/* project image */ 
- 
-#projects article > div:first-child{ 
-    flex: 1; 
-} 
- 
-#projects article img{ 
-    width: 100%; 
-    max-width: 450px; 
-    border-radius:10px; 
-} 
- 
-/* Project Information */ 
- 
-#projects article > div:last-child{ 
-    flex: 1; 
-} 
- 
-/* Project Title */ 
- 
-#projects h3{ 
-    color: #38bdf8; 
-    font-size: 25px; 
-    margin: 15px 0; 
-} 
- 
-/* Project Description */ 
- 
-#projects article p{ 
-    line-height: 1.7; 
-} 
- 
-/* Project Links */ 
- 
-#projects article a{ 
-    display: inline-block; 
-    margin-top:20px; 
-    padding: 12px 25px; 
- 
-    background-color: #38bdf8; 
-    color: #0f172a; 
- 
-    text-decoration: none; 
-    border-radius:6px; 
-    font-weight: bold; 
-} 
- 
-/*Hover Effect*/ 
- 
-#projects article a:hover{ 
-    background-color: #0284c7; 
-    color: white; 
-} 
- 
-/* Education Section */ 
- 
-#education{ 
-    padding:30px 8%; 
-    min-height: 100vh 
-} 
- 
-/* Education Heading */ 
- 
-#education > div:first-child{ 
-    text-align:center; 
-    margin-bottom:50px; 
-} 
- 
-/* Education card*/ 
- 
-#education > div:nth-child(2){ 
-    max-width: 800px; 
-    margin: 0 auto; 
- 
-    padding: 35px; 
-    background-color: #1e293b; 
-    border-radius: 15px; 
- 
-    border-left: 5px solid #38bdf8; 
-} 
- 
-/* University Name */ 
- 
-#education h3{ 
-    color: #38bdf8; 
-    font-size: 24px; 
-    margin-bottom: 15px; 
-} 
- 
-/* Degree */ 
- 
-#education p{ 
-    line-height: 1.7; 
-} 
- 
-/* contact section */ 
- 
-#contact{ 
-    padding: 30px 8%; 
-    min-height: 100vh; 
-} 
- 
-/* Contact Heading */ 
- 
-#contact > div:first-child{ 
-    text-align: center; 
-    margin-bottom: 50px; 
-} 
- 
-/* Contact content*/ 
- 
-#contact > div:nth-child(2){ 
-    display:flex; 
-    gap:60px; 
-    align-items:flex-start; 
-} 
- 
-/* Contact Information */ 
- 
-#contact > div:nth-child(2) > div:first-child{ 
-    flex: 1; 
-} 
- 
-/* form inputs */ 
- 
-#contact input, #contact textarea { 
-    width:100%; 
-    padding: 15px; 
- 
-    background-color: #1e293b; 
-    color:white; 
- 
-    border: 1px solid #334155; 
-    border-radius:8px; 
- 
-    font-family: inherit; 
-    box-sizing: border-box; 
- 
-} 
- 
-/* Textarea */ 
- 
-#contact textarea { 
-    min-height: 100px; 
-    resize: vertical; 
-} 
- 
-/*Input Focus*/ 
- 
-#contact input:focus, 
-#contact textarea:focus{ 
-    outline:none; 
-    border-color:#38bdf8; 
-} 
- 
-/* send button */ 
- 
-#contact button{ 
-    padding: 15px; 
- 
-    background-color: #38bdf8; 
-    color: #0f172a; 
- 
-    border: none; 
-    border-radius:8px; 
- 
-    font-weight: bold; 
-    cursor:pointer; 
-} 
- 
-/* Button Hover */ 
- 
-#contact button:hover{ 
-    background-color: #0284c7; 
-    color:white; 
-} 
- 
-/* Footer Section */ 
- 
-footer{ 
-    background-color: #0f172a; 
-    color: #cbd5e1; 
- 
-    text-align:center; 
- 
-    padding: 25px 8%; 
- 
-    border-top: 1px solid #334155; 
-} 
- 
-footer p{ 
-    font-size: 14px; 
-    margin: 0; 
-} 
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
 
-@media(max-width:768px){ 
- 
-    /* Navigattion */ 
- 
-     
-     
-    header{ 
-        width: 100%; 
-        margin: 0; 
-        padding: 15px; 
-        border-radius: 0; 
-    } 
- 
- 
-    header h1 { 
-        font-size: 32px; 
-        text-align: center; 
-    } 
- 
-    header nav{ 
-        flex-direction: row; 
-        gap: 20px; 
-    } 
- 
-    header nav ul{ 
-        display: flex; 
-        flex-direction: row; 
-        justify-content:center; 
-        list-style: none; 
-        padding: 0; 
-        flex-wrap: wrap; 
-        gap: 12px; 
-    } 
- 
-    /* Home Section */ 
- 
-    #home{ 
-        flex-direction: column; 
-        text-align: center; 
-        gap: 40px; 
-    } 
- 
-    #home > div{ 
-        width:100% 
-    } 
- 
-    #home > img{ 
-        max-width:250px; 
-    } 
- 
-    /* About Section */ 
- 
-    #about > div:nth-child(2){ 
-        flex-direction:column; 
-        text-align:center; 
-    } 
- 
-    /* Skills Section */ 
- 
-    #skills > div:nth-child(2){ 
-        grid-template-columns: 1fr; 
-    } 
- 
-    /* Projects Section */ 
- 
-    #projects article{ 
-        flex-direction: column; 
-    } 
-     
-    #projects article > div{ 
-        width:100%; 
-    } 
- 
-    /* Less empty space at the bottom of each section (mobile only) */
-    #about, #skills, #projects, #education, #contact{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0f172a;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+nav > a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+
+/* Navigation List */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+/* Navigation Links */
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    display: inline-block;
+}
+
+
+/* Navigation Hover */
+
+nav ul li a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DESKTOP SECTION SCROLL SPACING
+   Keeps section headings visible below the sticky header
+   ========================================================= */
+
+#home,
+#about,
+#skills,
+#projects,
+#education,
+#contact {
+    scroll-margin-top: 110px;
+}
+
+
+/* Home Screen */
+
+#home {
+    min-height: 100vh;
+    padding: 30px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* Text Container */
+
+#home > div:first-child {
+    flex: 1;
+}
+
+
+/* Main Heading */
+
+#home h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #38bdf8;
+}
+
+
+/* Subtitle */
+
+#home h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Paragraph */
+
+#home p {
+    line-height: 1.6;
+}
+
+
+/* Image Container */
+
+#home > div:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Profile Image */
+
+#home img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Buttons */
+
+#home a {
+    display: inline-block;
+
+    padding: 12px 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   About Section
+   ========================================================= */
+
+#about {
+    padding: 30px 8%;
+    min-height: 100vh;
+}
+
+
+/* About Heading */
+
+#about > div:first-child p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about > div:first-child h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* About Content */
+
+#about > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+#about img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* About Text */
+
+#about > div:nth-child(2) > div:last-child {
+    flex: 1;
+}
+
+#about > div:nth-child(2) p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   Skills Section
+   ========================================================= */
+
+#skills {
+    padding: 30px 8%;
+    min-height: 100vh;
+}
+
+
+/* Skills Heading */
+
+#skills > div:first-child {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Skills Grid */
+
+#skills > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+#skills > div:nth-child(2) > div {
+    background-color: #1e293b;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Skill Title */
+
+#skills h3 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+/* Skill Description */
+
+#skills p {
+    color: #cbd5e1;
+}
+
+
+/* Hover Effect */
+
+#skills > div:nth-child(2) > div:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   Project Section
+   ========================================================= */
+
+#projects {
+    padding: 30px 8%;
+    min-height: 100vh;
+}
+
+
+/* Projects Heading */
+
+#projects > div:first-child {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Project Card */
+
+#projects article {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    background-color: #1e293b;
+
+    padding: 100px;
+
+    border-radius: 15px;
+}
+
+
+/* Project Image */
+
+#projects article > div:first-child {
+    flex: 1;
+}
+
+
+#projects article img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+
+/* Project Information */
+
+#projects article > div:last-child {
+    flex: 1;
+}
+
+
+/* Project Title */
+
+#projects h3 {
+    color: #38bdf8;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+
+/* Project Description */
+
+#projects article p {
+    line-height: 1.7;
+}
+
+
+/* Project Links */
+
+#projects article a {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* Hover Effect */
+
+#projects article a:hover {
+    background-color: #0284c7;
+    color: white;
+}
+
+
+/* =========================================================
+   Education Section
+   ========================================================= */
+
+#education {
+    padding: 30px 8%;
+    min-height: 100vh;
+}
+
+
+/* Education Heading */
+
+#education > div:first-child {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Education Card */
+
+#education > div:nth-child(2) {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-color: #1e293b;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #38bdf8;
+}
+
+
+/* University Name */
+
+#education h3 {
+    color: #38bdf8;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+/* Degree */
+
+#education p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   Contact Section
+   ========================================================= */
+
+#contact {
+    padding: 30px 8%;
+    min-height: 100vh;
+}
+
+
+/* Contact Heading */
+
+#contact > div:first-child {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Contact Content */
+
+#contact > div:nth-child(2) {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+/* Contact Information */
+
+#contact > div:nth-child(2) > div:first-child {
+    flex: 1;
+}
+
+
+/* Form Inputs */
+
+#contact input,
+#contact textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #1e293b;
+    color: white;
+
+    border: 1px solid #334155;
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    box-sizing: border-box;
+}
+
+
+/* Textarea */
+
+#contact textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* Input Focus */
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+
+/* Send Button */
+
+#contact button {
+    padding: 15px;
+
+    background-color: #38bdf8;
+    color: #0f172a;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+
+#contact button:hover {
+    background-color: #0284c7;
+    color: white;
+}
+
+
+/* =========================================================
+   Footer Section
+   ========================================================= */
+
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 25px 8%;
+
+    border-top: 1px solid #334155;
+}
+
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================================
+   MOBILE VIEW
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        border-radius: 0;
+    }
+
+
+    header h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        list-style: none;
+
+        padding: 0;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+
+    /* Home Section */
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+
+    #home > div {
+        width: 100%;
+    }
+
+
+    #home > img {
+        max-width: 250px;
+    }
+
+
+    /* About Section */
+
+    #about > div:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* Skills Section */
+
+    #skills > div:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Projects Section */
+
+    #projects article {
+        flex-direction: column;
+    }
+
+
+    #projects article > div {
+        width: 100%;
+    }
+
+
+    /* Less empty space at the bottom of each section */
+
+    #about,
+    #skills,
+    #projects,
+    #education,
+    #contact {
         min-height: auto;
     }
 
-    /* Contact Section */ 
- 
-    #contact > div:nth-child(2){ 
-        flex-direction: column; 
-        gap: 30px; 
-    } 
-} 
 
-/* ============================================================
-   NEW: Web (desktop) view spacing only - does NOT affect mobile
-   ============================================================ */
+    /* Contact Section */
 
-/* Remove the big empty space after each section (mobile only) */
-@media (max-width: 768px){
-    #about, #skills, #projects, #education, #contact{
+    #contact > div:nth-child(2) {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE ONLY - SECTION SPACING
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    #about,
+    #skills,
+    #projects,
+    #education,
+    #contact {
         min-height: 0 !important;
         padding-top: 150px !important;
     }
+}
 }
 }
 
